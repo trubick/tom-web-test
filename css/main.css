@@ -21,6 +21,8 @@ html {
 body {
     display: flex;
     align-items: center;
+
+
 }
 
 
@@ -177,20 +179,94 @@ textarea {
 }
 
 #header {
-    background-image: url("../img/daynight-conservatory.jpeg");
+    background-image: url("../img/roman-blind-curved-bay.jpeg");
     width: 100%;
-    /*display:flex;*/
-    /*justify-content: space-evenly;*/
     padding: 100px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /*height:20%;*/
-    /*border: 1px solid white;*/
+/*#logo-container h1{*/
+/*    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;*/
+/*}*/
+#logo{
+    width:100%;
+    min-width: 400px;
 }
+
+#social-media-links {
+    display: flex;
+    width: 100px;
+    min-width: 50px;
+    justify-content: center;
+}
+
+nav {
+    /*border: 1px solid black;*/
+    width: 100%;
+    /*font-family: "Arial";*/
+
+    opacity: .6;
+    background-color: white;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;;
+    justify-content: space-evenly;
+    padding: 0px;
+    text-align: center;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+nav li a {
+    text-decoration: none;
+    /*font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;*/
+    border-radius: 20px;
+    color: black;
+}
+
+#home-section {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.big-icon-text-set {
+    /*border: 1px solid black;*/
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.big-icon-text-set p {
+    text-align: center;
+}
+
+
+/*#home-section p{*/
+/*    !*background-color:grey;*!*/
+/*    opacity:1;*/
+/*    font-size: 1.25em;*/
+/*    padding:50px;*/
+/*    border: solid 1px white;*/
+/*    border-radius: 25px;*/
+/*    color:black;*/
+/*}*/
 
 /*#nav button {*/
 /*    background-color: unset;*/
@@ -200,33 +276,16 @@ textarea {
 /*    line-height: 2;*/
 /*}*/
 
-nav ul {
-    list-style-type: none;
-}
-
-li {
-    color: white;
-    font-size: 1.5em;
-    display: inline;
-    padding-right: 20px;
-}
-
-
-#nav button:hover {
-    border: 1px solid white;
-}
 
 #blinds-sub-menu {
     display: flex;
     flex-direction: column;
 }
 
-#header div {
-    width: 50%;
-}
 
 #header div p {
     color: white;
+    text-align: right;
 }
 
 #main-container {
@@ -234,26 +293,105 @@ li {
     margin: auto;
 }
 
-#footer {
+footer {
     background-color: #cccccc;
-    height: 200px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:.75em;
+}
+
+footer ul{
+    list-style-type: none;
+    /*text-align: right;*/
+}
+
+#nav-contact-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#nav-contact-row ul{
+    text-align:center;
+}
+
+#nav-contact-row a{
+    text-underline: none;
+}
+
+
+#logo-container {
+    width:30%;
+}
+
+#logo-container img{
+    width:100%;
+    height:100%;
 }
 
 /*to do rename to section*/
 /*need a seperate one for smaller sub-sections*/
 
+#blinds-section-image-container{
+    /*height: 500px;*/
+}
+
+#blinds-section-image-container img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#blinds-section-image-container img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#blinds-text-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+#blinds-text-section p{
+    width: 240px;
+    text-align: center;
+}
+
+#repairs-section-container{
+    display: flex;
+    height: 500px;
+    background-image: url("../img/tools-on-black.png");
+}
+
+#repair-text-section{
+    color:white;
+    width: 240px;
+    margin-left:100px;
+    margin-top:100px;
+}
+
+#contact-section-container img{
+    height:100%;
+    width: 100%;
+}
+
 .epic-section {
-    background-color: grey;
+    /*background-color: grey;*/
 }
 
 .epic-header {
-    padding: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    height: 280px;
-    justify-content: space-between;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    background-color: #cccccc;
+    font-family: "Arial";
+    font-size: 1.5em;
+
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
 }
 
 .epic-header img {
@@ -263,12 +401,12 @@ li {
 }
 
 .sub-sections-container {
-    height:4000px;
+    /*border: 1px solid black;*/
+    height: 4500px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 100px;
-
+    /*padding: 100px;*/
 }
 
 .sub-section {
@@ -278,7 +416,7 @@ li {
     /*margin: 15px;*/
     padding: 35px;
     background-color: white;
-    height:auto;
+    height: auto;
     margin-bottom: 5px;
     border: 0px
 }
@@ -286,9 +424,9 @@ li {
 .sub-section-image {
 }
 
-.sub-section-image img{
-    width:100%;
-    height:100%;
+.sub-section-image img {
+    width: 100%;
+    height: 100%;
     border-radius: 30px;
 }
 
@@ -318,6 +456,7 @@ li {
 
 .half-col {
     width: 25%;
+    padding-right: 30px;
 }
 
 .three-quart-col {
