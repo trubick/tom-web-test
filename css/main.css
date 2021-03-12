@@ -178,6 +178,11 @@ textarea {
     clear: both;
 }
 
+a{
+    outline: none;
+    text-decoration: none;
+}
+
 #header {
     background-image: url("../img/roman-blind-curved-bay.jpeg");
     width: 100%;
@@ -319,11 +324,15 @@ footer ul{
 #nav-contact-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 50%;
+    flex-wrap: wrap;
+    font-size: .75em;
 }
 
 #nav-contact-row ul{
     text-align:center;
+    padding:0px;
 }
 
 #nav-contact-row a{
@@ -332,7 +341,8 @@ footer ul{
 
 
 #logo-container {
-    width:30%;
+    width:50%;
+    min-width: 400px;
 }
 
 #logo-container img{
