@@ -184,21 +184,18 @@ a{
 }
 
 #header {
-    background-image: url("../img/roman-blind-curved-bay.jpeg");
+    background-image: url("../img/shutters/hollywood.jpg");
     width: 100%;
-    height: 800px;
+    height: 710px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-/*#logo-container h1{*/
-/*    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;*/
-/*}*/
 #logo{
     width:100%;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 #social-media-links {
@@ -264,25 +261,6 @@ nav li a {
 }
 
 
-/*#home-section p{*/
-/*    !*background-color:grey;*!*/
-/*    opacity:1;*/
-/*    font-size: 1.25em;*/
-/*    padding:50px;*/
-/*    border: solid 1px white;*/
-/*    border-radius: 25px;*/
-/*    color:black;*/
-/*}*/
-
-/*#nav button {*/
-/*    background-color: unset;*/
-/*    font-size: large;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    line-height: 2;*/
-/*}*/
-
-
 #blinds-sub-menu {
     display: flex;
     flex-direction: column;
@@ -295,6 +273,9 @@ nav li a {
 
 #header-logo-container{
     width:80%;
+    position: relative;
+    top:-75px;
+    min-width: 450px;
 }
 
 
@@ -321,6 +302,10 @@ footer ul{
     /*text-align: right;*/
 }
 
+footer span{
+    padding:20px;
+}
+
 #nav-contact-row{
     display: flex;
     flex-direction: row;
@@ -339,10 +324,9 @@ footer ul{
     text-underline: none;
 }
 
-
 #logo-container {
     width:50%;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 #logo-container img{
@@ -353,11 +337,11 @@ footer ul{
 /*to do rename to section*/
 /*need a seperate one for smaller sub-sections*/
 
-#blinds-section-image-container{
+.epic-main-image-container{
     /*height: 500px;*/
 }
 
-#blinds-section-image-container img{
+.epic-main-image-container img{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -369,7 +353,7 @@ footer ul{
     overflow: hidden;
 }
 
-#blinds-text-section{
+.epic-text-section{
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
@@ -377,7 +361,7 @@ footer ul{
     background-color: white;
 }
 
-#blinds-text-section p{
+.epic-text-section p{
     width: 240px;
     text-align: center;
 }
@@ -422,12 +406,21 @@ footer ul{
 
 .sub-sections-container {
     /*border: 1px solid black;*/
-    height: 4500px;
+    /*height: 4200px;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     /*padding: 100px;*/
 }
+
+#blinds-sub-sections{
+    height:4200px;
+}
+
+#shutters-sub-sections{
+    height: 4100px;
+}
+
 
 .sub-section {
     width: 50%;
@@ -577,6 +570,7 @@ footer ul{
     h2,
     h3 {
         page-break-after: avoid;
+        font-size: 1vh;
     }
 }
 
