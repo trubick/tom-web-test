@@ -209,7 +209,7 @@ a{
     min-width:100px;
     justify-content: center;
     position:relative;
-    top:-100px;
+    top:40px;
 }
 
 #header-contact{
@@ -249,7 +249,7 @@ nav ul {
     text-align: center;
 }
 
-li {
+nav li {
     font-size: 1.5em;
 }
 
@@ -384,8 +384,20 @@ footer span{
     background-color: white;
 }
 
-.epic-text-section p{
-    width: 240px;
+.epic-text-section ul{
+    list-style-type: none;
+    /*width: 100%;*/
+    padding:0px;
+}
+
+.epic-text-section div {
+    display:flex;
+    justify-items: center;
+    text-align: center;
+}
+
+.epic-text-section p, .epic-text-section div{
+    width: 25%;
     text-align: center;
 }
 
