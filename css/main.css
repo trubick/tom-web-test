@@ -178,7 +178,7 @@ textarea {
     clear: both;
 }
 
-a{
+a {
     outline: none;
     text-decoration: none;
 }
@@ -193,26 +193,27 @@ a{
     justify-content: space-evenly;
 }
 
-#header span{
+#header span {
     font-size: 1.5em;
     margin-right: 25px;
 }
 
-#logo{
-    width:100%;
+#logo {
+    width: 100%;
     min-width: 300px;
 }
 
 #social-media-links {
     display: flex;
-    width:8%;
-    min-width:100px;
+    width: 8%;
+    min-width: 100px;
     justify-content: center;
-    position:relative;
-    top:40px;
+    position: relative;
+    /*top: 40px;*/
 }
 
-#header-contact{
+
+#header-contact {
     display: flex;
     width: 100%;
     color: black;
@@ -222,16 +223,16 @@ a{
     /*text-align: center;*/
 }
 
-.faded-white{
+.faded-white {
     opacity: .6;
     background-color: white;
 }
 
-#email-icon-parent{
+#email-icon-parent {
     width: 4%;
 }
 
-.full-width{
+.full-width {
     width: 100%;
 }
 
@@ -272,7 +273,7 @@ nav li a {
 
 .big-icon-text-set {
     /*border: 1px solid black;*/
-    width: 300px;
+    width: 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -282,21 +283,20 @@ nav li a {
     text-align: center;
 }
 
-
 #blinds-sub-menu {
     display: flex;
     flex-direction: column;
 }
 
-#header img{
-    width:100%;
-    height:100%;
+#header img {
+    width: 100%;
+    height: 100%;
 }
 
-#header-logo-container{
-    width:80%;
+#header-logo-container {
+    width: 80%;
     position: relative;
-    top:-75px;
+    top: -75px;
     min-width: 450px;
 }
 
@@ -313,70 +313,78 @@ nav li a {
 
 footer {
     background-color: #cccccc;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    font-size:.75em;
+    font-size: .75em;
 }
 
-footer ul{
+footer ul {
     list-style-type: none;
     /*text-align: right;*/
 }
 
-footer span{
-    padding:30px;
+footer span {
+    padding: 30px;
     text-align: center;
 }
 
-#nav-contact-row{
+#nav-contact-row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 50%;
     flex-wrap: wrap;
-    font-size: .75em;
+
 }
 
-#nav-contact-row ul{
-    text-align:center;
-    padding:0px;
+#nav-contact-row ul {
+    text-align: center;
+    padding: 0px;
+    font-size: 1.2em;
 }
 
-#nav-contact-row a{
+#nav-contact-row a {
     text-underline: none;
 }
 
+#docked-nav {
+    position: fixed;
+    bottom: 0px;
+    background-color: #cccccc;
+    border-top: 1px solid white;
+}
+
 #logo-container {
-    width:50%;
+    width: 50%;
     min-width: 250px;
 }
 
-#logo-container img{
-    width:100%;
-    height:100%;
+#logo-container img {
+    width: 100%;
+    height: 100%;
 }
 
 /*to do rename to section*/
 /*need a seperate one for smaller sub-sections*/
 
-.epic-main-image-container{
+.epic-main-image-container {
     /*height: 500px;*/
 }
 
-.epic-main-image-container img{
+.epic-main-image-container img {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-#blinds-section-image-container img{
+#blinds-section-image-container img {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.epic-text-section{
+.epic-text-section {
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
@@ -384,39 +392,63 @@ footer span{
     background-color: white;
 }
 
-.epic-text-section ul{
+.epic-text-section ul {
     list-style-type: none;
     /*width: 100%;*/
-    padding:0px;
+    padding: 0px;
 }
 
-.epic-text-section div {
-    display:flex;
-    justify-items: center;
-    text-align: center;
+/*.epic-text-section div {*/
+/*    display: flex;*/
+/*    justify-items: center;*/
+/*    text-align: center;*/
+/*}*/
+.epic-text-section p:first-child {
+    text-align:left;
 }
 
-.epic-text-section p, .epic-text-section div{
+.epic-text-section p, .epic-text-section div {
     width: 25%;
-    text-align: center;
+    min-width: 180px;
+    text-align: right;
 }
 
-#repairs-section-container{
+#repairs-section-container {
     display: flex;
     height: 500px;
     background-image: url("../img/tools-on-black.png");
 }
 
-#repair-text-section{
-    color:white;
+#repair-text-section {
+    color: white;
     width: 240px;
-    margin-left:100px;
-    margin-top:100px;
+    margin-left: 100px;
+    margin-top: 100px;
 }
 
-#contact-section-container img{
-    height:100%;
-    width: 100%;
+#contact-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+    background-image: url("../img/generic-background.jpg");
+}
+
+#contact-section-container span {
+    font-size: 1.75em;
+    color: black;
+}
+
+#social-media-links-contact {
+    width: 50%;
+    display: flex;
+    /*border: 1px solid black;*/
+    justify-content: space-evenly;
+}
+
+#social-media-links-contact img {
+    width: 25%;
 }
 
 .epic-section {
@@ -448,14 +480,17 @@ footer span{
     /*padding: 100px;*/
 }
 
-#blinds-sub-sections{
-    height:4200px;
+#blinds-sub-sections {
+    height: 4200px;
 }
 
-#shutters-sub-sections{
+#shutters-sub-sections {
     height: 4100px;
 }
 
+#gallery-sub-sections {
+    height: 4500px;
+}
 
 .sub-section {
     width: 50%;
