@@ -21,8 +21,6 @@ html {
 body {
     display: flex;
     align-items: center;
-
-
 }
 
 
@@ -190,7 +188,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-top: 75px;
 }
 
 #header span {
@@ -205,11 +205,17 @@ a {
 
 #social-media-links {
     display: flex;
-    width: 8%;
-    min-width: 100px;
+    width: 20%;
+    min-width: 200px;
     justify-content: center;
     position: relative;
+    /*border: 1px solid black;*/
     /*top: 40px;*/
+}
+
+#social-media-links img {
+    flex-basis: auto;
+    width: 33%;
 }
 
 
@@ -245,7 +251,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 0px;
     text-align: center;
 }
@@ -288,16 +294,21 @@ nav li a {
     flex-direction: column;
 }
 
-#header img {
-    width: 100%;
-    height: 100%;
-}
+/*#header img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
 
 #header-logo-container {
     width: 80%;
     position: relative;
     top: -75px;
-    min-width: 450px;
+    /*min-width: 450px;*/
+}
+
+#header-logo-container img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -350,9 +361,13 @@ footer span {
 
 #docked-nav {
     position: fixed;
-    bottom: 0px;
-    background-color: #cccccc;
-    border-top: 1px solid white;
+    top: 0px;
+    /*left: 0px;*/
+    /*background-color: #bbbead;*/
+    background-color: #8e9188;
+    border-bottom: 5px solid white;
+    min-width: 200px;
+    width: 80%;
 }
 
 #logo-container {
@@ -404,13 +419,13 @@ footer span {
 /*    text-align: center;*/
 /*}*/
 .epic-text-section p:first-child {
-    text-align:left;
+    text-align: left;
 }
 
 .epic-text-section p, .epic-text-section div {
     width: 25%;
     min-width: 180px;
-    text-align: right;
+    text-align: left;
 }
 
 #repairs-section-container {
@@ -485,11 +500,11 @@ footer span {
 }
 
 #shutters-sub-sections {
-    height: 4100px;
+    height: 4000px;
 }
 
 #gallery-sub-sections {
-    height: 4500px;
+    height: 4200px;
 }
 
 .sub-section {
@@ -557,9 +572,10 @@ footer span {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+/*@media only screen and (min-width: 35em) {*/
+
+/*}*/
+
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
@@ -641,6 +657,158 @@ footer span {
     h3 {
         page-break-after: avoid;
         font-size: 1vh;
+    }
+}
+
+/*ipad portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+
+    #main-container{
+        width: 100%;
+        position: relative;
+        top: 200px;
+    }
+
+    p{
+        font-size: 1.25em;
+    }
+
+    #home-section{
+        padding: 30px;
+    }
+
+    #docked-nav {
+        width: 100%;
+    }
+
+    .epic-text-section ul{
+        font-size: 1.25em;
+        list-style-type: circle;
+    }
+
+    #nav2 ul {
+        flex-direction: column;
+        font-size: 1.25em;
+    }
+
+    #shutters-sub-sections, #blinds-sub-sections, #gallery-sub-sections {
+        height: unset;
+    }
+
+    #blinds-sub-sections{
+        height: unset;
+    }
+
+    .sub-section {
+        width: 100%;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    #contact-section-container span {
+        font-size: 1em;
+        width: 60%;
+        text-align: center;
+        color: white;
+    }
+
+    footer span {
+        font-size: 1.5em;
+    }
+
+    #repair-text-section{
+        width: 50%;
+    }
+
+
+
+}
+
+/*mobile*/
+@media only screen and (min-device-width: 220px) and (max-device-width: 580px) {
+    /* Styles */
+    nav ul {
+        flex-direction: column;
+        font-size: .75em;
+    }
+
+    h2 {
+        font-size: .75em;
+    }
+
+    #main-container {
+        width: auto;
+    }
+
+    *, *:before, *:after {
+        box-sizing: unset;
+    }
+
+    #contact-section-container {
+
+    }
+
+    #docked-nav {
+        width: 100%;
+    }
+
+    #header {
+        padding-top: 0px;
+    }
+
+    #header-logo-container {
+        top: 0px;
+        padding: 0px;
+        width: unset;
+    }
+
+    #nav-contact-row {
+        font-size: 1.5em;
+    }
+
+
+    #logo-container {
+        width: 100%;
+    }
+
+    p, h3 {
+        font-size: 1.25em;
+    }
+
+    #shutters-sub-sections, #blinds-sub-sections, #gallery-sub-sections {
+        height: unset;
+    }
+
+    .epic-text-section p, .epic-text-section div {
+        width: unset;
+    }
+
+    ul {
+        font-size: 1.25em;
+    }
+
+    #social-media-links {
+        width: 75%;
+        position: relative;
+        top: -15px;
+    }
+
+    #social-media-links-contact {
+        width: unset;
+    }
+
+    #contact-section-container span {
+        font-size: 1em;
+        width: 60%;
+        text-align: center;
+        color: white;
+    }
+
+    footer span {
+        font-size: 1.5em;
     }
 }
 
