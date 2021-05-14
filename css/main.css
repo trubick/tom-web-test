@@ -21,8 +21,6 @@ html {
 body {
     display: flex;
     align-items: center;
-
-
 }
 
 
@@ -178,40 +176,74 @@ textarea {
     clear: both;
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+}
+
 #header {
-    background-image: url("../img/roman-blind-curved-bay.jpeg");
+    background-image: url("../img/shutters/hollywood.jpg");
     width: 100%;
-    padding: 100px;
-    height: 800px;
+    height: 710px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-top: 75px;
 }
 
-/*#logo-container h1{*/
-/*    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;*/
-/*}*/
-#logo{
-    width:100%;
-    min-width: 400px;
+#header span {
+    font-size: 1.5em;
+    margin-right: 25px;
+}
+
+#logo {
+    width: 100%;
+    min-width: 300px;
 }
 
 #social-media-links {
     display: flex;
-    width: 100px;
-    min-width: 50px;
+    width: 20%;
+    min-width: 200px;
     justify-content: center;
+    position: relative;
+    /*border: 1px solid black;*/
+    /*top: 40px;*/
+}
+
+#social-media-links img {
+    flex-basis: auto;
+    width: 33%;
+}
+
+
+#header-contact {
+    display: flex;
+    width: 100%;
+    color: black;
+    justify-content: center;
+    padding: 12px 0px 12px 0px;
+    /*text-align: center;*/
+    /*text-align: center;*/
+}
+
+.faded-white {
+    opacity: .6;
+    background-color: white;
+}
+
+#email-icon-parent {
+    width: 4%;
+}
+
+.full-width {
+    width: 100%;
 }
 
 nav {
-    /*border: 1px solid black;*/
     width: 100%;
-    /*font-family: "Arial";*/
-
-    opacity: .6;
-    background-color: white;
-
 }
 
 nav ul {
@@ -219,12 +251,12 @@ nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 0px;
     text-align: center;
 }
 
-li {
+nav li {
     font-size: 1.5em;
 }
 
@@ -247,7 +279,7 @@ nav li a {
 
 .big-icon-text-set {
     /*border: 1px solid black;*/
-    width: 300px;
+    width: 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -257,29 +289,26 @@ nav li a {
     text-align: center;
 }
 
-
-/*#home-section p{*/
-/*    !*background-color:grey;*!*/
-/*    opacity:1;*/
-/*    font-size: 1.25em;*/
-/*    padding:50px;*/
-/*    border: solid 1px white;*/
-/*    border-radius: 25px;*/
-/*    color:black;*/
-/*}*/
-
-/*#nav button {*/
-/*    background-color: unset;*/
-/*    font-size: large;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    line-height: 2;*/
-/*}*/
-
-
 #blinds-sub-menu {
     display: flex;
     flex-direction: column;
+}
+
+/*#header img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+
+#header-logo-container {
+    width: 80%;
+    position: relative;
+    top: -75px;
+    /*min-width: 450px;*/
+}
+
+#header-logo-container img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -295,61 +324,82 @@ nav li a {
 
 footer {
     background-color: #cccccc;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    font-size:.75em;
+    font-size: .75em;
 }
 
-footer ul{
+footer ul {
     list-style-type: none;
     /*text-align: right;*/
 }
 
-#nav-contact-row{
+footer span {
+    padding: 30px;
+    text-align: center;
+}
+
+#nav-contact-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 50%;
+    flex-wrap: wrap;
+
 }
 
-#nav-contact-row ul{
-    text-align:center;
+#nav-contact-row ul {
+    text-align: center;
+    padding: 0px;
+    font-size: 1.2em;
 }
 
-#nav-contact-row a{
+#nav-contact-row a {
     text-underline: none;
 }
 
-
-#logo-container {
-    width:30%;
+#docked-nav {
+    position: fixed;
+    top: 0px;
+    /*left: 0px;*/
+    /*background-color: #bbbead;*/
+    background-color: #8e9188;
+    border-bottom: 5px solid white;
+    min-width: 200px;
+    width: 80%;
 }
 
-#logo-container img{
-    width:100%;
-    height:100%;
+#logo-container {
+    width: 50%;
+    min-width: 250px;
+}
+
+#logo-container img {
+    width: 100%;
+    height: 100%;
 }
 
 /*to do rename to section*/
 /*need a seperate one for smaller sub-sections*/
 
-#blinds-section-image-container{
+.epic-main-image-container {
     /*height: 500px;*/
 }
 
-#blinds-section-image-container img{
+.epic-main-image-container img {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-#blinds-section-image-container img{
+#blinds-section-image-container img {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-#blinds-text-section{
+.epic-text-section {
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
@@ -357,27 +407,63 @@ footer ul{
     background-color: white;
 }
 
-#blinds-text-section p{
-    width: 240px;
-    text-align: center;
+.epic-text-section ul {
+    list-style-type: none;
+    /*width: 100%;*/
+    padding: 0px;
 }
 
-#repairs-section-container{
+/*.epic-text-section div {*/
+/*    display: flex;*/
+/*    justify-items: center;*/
+/*    text-align: center;*/
+/*}*/
+.epic-text-section p:first-child {
+    text-align: left;
+}
+
+.epic-text-section p, .epic-text-section div {
+    width: 25%;
+    min-width: 180px;
+    text-align: left;
+}
+
+#repairs-section-container {
     display: flex;
     height: 500px;
     background-image: url("../img/tools-on-black.png");
 }
 
-#repair-text-section{
-    color:white;
+#repair-text-section {
+    color: white;
     width: 240px;
-    margin-left:100px;
-    margin-top:100px;
+    margin-left: 100px;
+    margin-top: 100px;
 }
 
-#contact-section-container img{
-    height:100%;
-    width: 100%;
+#contact-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+    background-image: url("../img/generic-background.jpg");
+}
+
+#contact-section-container span {
+    font-size: 1.75em;
+    color: black;
+}
+
+#social-media-links-contact {
+    width: 50%;
+    display: flex;
+    /*border: 1px solid black;*/
+    justify-content: space-evenly;
+}
+
+#social-media-links-contact img {
+    width: 25%;
 }
 
 .epic-section {
@@ -402,11 +488,23 @@ footer ul{
 
 .sub-sections-container {
     /*border: 1px solid black;*/
-    height: 4500px;
+    /*height: 4200px;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     /*padding: 100px;*/
+}
+
+#blinds-sub-sections {
+    height: 4200px;
+}
+
+#shutters-sub-sections {
+    height: 4000px;
+}
+
+#gallery-sub-sections {
+    height: 4200px;
 }
 
 .sub-section {
@@ -474,9 +572,10 @@ footer ul{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+/*@media only screen and (min-width: 35em) {*/
+
+/*}*/
+
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
@@ -557,6 +656,159 @@ footer ul{
     h2,
     h3 {
         page-break-after: avoid;
+        font-size: 1vh;
+    }
+}
+
+/*ipad portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+
+    #main-container{
+        width: 100%;
+        position: relative;
+        top: 200px;
+    }
+
+    p{
+        font-size: 1.25em;
+    }
+
+    #home-section{
+        padding: 30px;
+    }
+
+    #docked-nav {
+        width: 100%;
+    }
+
+    .epic-text-section ul{
+        font-size: 1.25em;
+        list-style-type: circle;
+    }
+
+    #nav2 ul {
+        flex-direction: column;
+        font-size: 1.25em;
+    }
+
+    #shutters-sub-sections, #blinds-sub-sections, #gallery-sub-sections {
+        height: unset;
+    }
+
+    #blinds-sub-sections{
+        height: unset;
+    }
+
+    .sub-section {
+        width: 100%;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    #contact-section-container span {
+        font-size: 1em;
+        width: 60%;
+        text-align: center;
+        color: white;
+    }
+
+    footer span {
+        font-size: 1.5em;
+    }
+
+    #repair-text-section{
+        width: 50%;
+    }
+
+
+
+}
+
+/*mobile*/
+@media only screen and (min-device-width: 220px) and (max-device-width: 580px) {
+    /* Styles */
+    nav ul {
+        flex-direction: column;
+        font-size: .75em;
+    }
+
+    h2 {
+        font-size: .75em;
+    }
+
+    #main-container {
+        width: auto;
+    }
+
+    *, *:before, *:after {
+        box-sizing: unset;
+    }
+
+    #contact-section-container {
+
+    }
+
+    #docked-nav {
+        width: 100%;
+    }
+
+    #header {
+        padding-top: 0px;
+    }
+
+    #header-logo-container {
+        top: 0px;
+        padding: 0px;
+        width: unset;
+    }
+
+    #nav-contact-row {
+        font-size: 1.5em;
+    }
+
+
+    #logo-container {
+        width: 100%;
+    }
+
+    p, h3 {
+        font-size: 1.25em;
+    }
+
+    #shutters-sub-sections, #blinds-sub-sections, #gallery-sub-sections {
+        height: unset;
+    }
+
+    .epic-text-section p, .epic-text-section div {
+        width: unset;
+    }
+
+    ul {
+        font-size: 1.25em;
+    }
+
+    #social-media-links {
+        width: 75%;
+        position: relative;
+        top: -15px;
+    }
+
+    #social-media-links-contact {
+        width: unset;
+    }
+
+    #contact-section-container span {
+        font-size: 1em;
+        width: 60%;
+        text-align: center;
+        color: white;
+    }
+
+    footer span {
+        font-size: 1.5em;
     }
 }
 

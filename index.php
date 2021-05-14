@@ -24,73 +24,86 @@
 
 <body>
 <div id="main-container">
-
     <div id="header">
-        <img src="img/svg/logo.svg"/>
-        <div id="social-media-links">
-            <img src="img/svg/icons/facebook.svg"/>
-            <img src="img/svg/icons/twitter.svg"/>
+        <div id="header-logo-container">
+            <img src="img/svg/logo.svg"/>
         </div>
 
-        <nav id="nav">
-            <ul>
-                <li>
-                    <a href="#home-section">
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="#blinds-section">BLINDS</a>
-                </li>
-                <li><a href="#shutters-section">SHUTTERS</a></li>
-                <li>
-                    <a href="#repairs-section">
-                        MAINTENANCE & REPAIRS
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact-section">CONTACT US</a>
-                </li>
-            </ul>
-            <!--            <div id="blinds-sub-menu" class="invisible">-->
-            <!--                <button>Venetian</button>-->
-            <!--                <button>Pleated</button>-->
-            <!--                <button>Perfect fit</button>-->
-            <!--                <button>Roman</button>-->
-            <!--                <button>Vertical</button>-->
-            <!--                <button>Roller</button>-->
-            <!--                <button>Conservatory</button>-->
-            <!--                <button>Childrens</button>-->
-            <!--            </div>-->
-        </nav>
-        <!--        <div id="home-section">-->
+        <div id="social-media-links">
+            <img src="img/svg/icons/facebook-round-line.svg"/>
+            <img src="img/svg/icons/instagram-round-line.svg"/>
+            <img src="img/svg/icons/email-round-line.svg"/>
+        </div>
 
+<!--        <div class="faded-white full-width">-->
+<!--            <nav id="nav">-->
+<!--                <ul>-->
+<!--                    <li>-->
+<!--                        <a href="#home-section">-->
+<!--                            HOME-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#blinds-sub-sections">BLINDS</a>-->
+<!--                    </li>-->
+<!--                    <li><a href="#shutters-sub-sections">SHUTTERS</a></li>-->
+<!--                    <li>-->
+<!--                        <a href="#repairs-section-container">-->
+<!--                            MAINTENANCE & REPAIRS-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#contact-section-container">CONTACT US</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#gallery-section">GALLERY</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--        </div>-->
 
-        <!--&lt;!&ndash;            <p>The measuring service, site survey and installation is all carried out by one contact within the company&ndash;&gt;-->
-        <!--&lt;!&ndash;                at a convenient time to suit you. This ensures you receive a personalised service and professional&ndash;&gt;-->
-        <!--&lt;!&ndash;                relationship from start to finish.</p>&ndash;&gt;-->
-        <!--&lt;!&ndash;            <p>In addition to supplying and fitting new blinds and shutters, we also provide additional services such as&ndash;&gt;-->
-        <!--&lt;!&ndash;                fitting existing blinds. Please ask for further details and we will happily provide you with a&ndash;&gt;-->
-        <!--&lt;!&ndash;                quotation.</p>&ndash;&gt;-->
-
-        <!--        </div>-->
+        <div id="docked-nav">
+            <nav id="nav2">
+                <ul>
+                    <li>
+                        <a href="#home-section">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blinds-sub-sections">BLINDS</a>
+                    </li>
+                    <li><a href="#shutters-sub-sections">SHUTTERS</a></li>
+                    <li>
+                        <a href="#repairs-section-container">
+                            MAINTENANCE & REPAIRS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact-section-container">CONTACT US</a>
+                    </li>
+                    <li>
+                        <a href="#gallery-section">GALLERY</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
     <div id="epic-section">
         <div id="home-section">
             <div class="big-icon-text-set">
                 <img src="img/svg/icons/3d-modeling.svg"/>
                 <p>CR Blinds and Shutters provides high quality made to measure blinds and shutters with a full
-                    installation service and manufacturers guarantee, at reasonable prices within Bristol and the
-                    surrounding areas. Whether you are a homeowner looking for domestic blinds or shutters or a
-                    commercial
-                    enterprise, we are happy to provide you with a quotation.</p>
+                    installation service and manufacturers guarantee, at reasonable prices with expert knowledge and
+                    years of experience within Bristol and the surrounding areas.</p>
             </div>
             <div class="big-icon-text-set">
                 <img src="img/svg/icons/creative-thinking.svg"/>
-                <p>Part of the service we offer is to provide expert advice on the differing types of blinds and
-                    shutters that are best suited to your windows,
-                    doors and conservatories. We ensure we keep your budget and preferences in mind whilst providing a
-                    no obligation quotation.</p>
+                <p>Whether you are a homeowner or business owner looking for blinds and shutters, we are happy to visit
+                    your premises to undertake a full measure/survey of your windows, provide expert advice on the best
+                    windows coverings and follow-up with a free no obligation quotation keeping your budget and
+                    preferences in mind.</p>
             </div>
             <div class="big-icon-text-set">
                 <img src="img/svg/icons/calendar-checkmark-line.svg"/>
@@ -102,51 +115,113 @@
             <div class="big-icon-text-set">
                 <img src="img/svg/icons/math-plus.svg"/>
                 <p>In addition to supplying and fitting new blinds and shutters, we also provide additional services
-                    such as fitting existing blinds.
-                    Please ask for further details and we will happily provide you with a quotation</p>
+                    such as fitting existing blinds and a repair service. For more information please contact us.</p>
             </div>
         </div>
     </div>
     <div class="epic-header">
-        <h2>BLINDS</h2>
+        <h2>SHUTTERS</h2>
     </div>
-    <div class="epic-section">
-        <div id="blinds-section-image-container">
-            <img src="img/roman-blind-floral.jpeg"/>
+    <div class="epic-section" id="shutters-section">
+        <div class="epic-main-image-container">
+            <img src="img/shutters/arched.jpg"/>
         </div>
 
-        <div id="blinds-text-section">
-            <p>CR Blinds and shutters are able to provide a full supply, quotation and installation service of made to
-                measure blinds and shutters in many different product ranges.</p>
-            <p>Whether you are looking for a contemporary finish, a touch of luxury, bringing the outside in with the
-                botanical range, a touch of colour,
-                a creative design for a kitchen or bathroom or a more delicate or
-                natural tone, we are sure to have a solution that meets your requirement and budget.</p>
-            <p>All of the blinds provided by CR Blinds and Shutters are installed with safety mechanisms which conform
-                to child safety standards.</p>
+        <div class="epic-text-section">
+            <div>
+                <h3>Lifestyle Enhancements</h3>
+                <ul>
+                    <li>Great light control</li>
+                    <li>Reduction of noise from the outside</li>
+                    <li>Insulation to help retain heat</li>
+                    <li>Privacy when you adjust the louvres</li>
+                    <li>Provide a touch of elegant, style to your windows whether you are inside looking out or outside looking in</li>
+                </ul>
+            </div>
+            <p>Shutters are a stylish and versatile option as they are available in a range of colours and can be made
+                to fit any shape or size window or door. Shutters are a major purchase, however they are a great
+                investment and add value and curb appeal to your property.</p>
+            <p>Whether you prefer a modern contemporary or a traditional look, we have the solution and expert advice to
+                help you make the right choices</p>
         </div>
-
         <hr>
 
-        <div class="sub-sections-container">
+        <div class="sub-sections-container" id="shutters-sub-sections">
             <div class="sub-section">
                 <div class="sub-section-description">
-                    <h3>Shutters</h3>
-                    <p>The shutters supplied by CR Blinds and Shutters come in stylish and versatile options and are
-                        available in a range of colours and can be made to fit any size of window or door.
-                        With an extensive range of colours and a huge choice of painted, stained and natural finishes
-                        you are sure to find something that suits your home.</p>
-                    <p>If your preference is to have your shutters colour matched to a specific requirement, this is
-                        also available as a custom colour option.</p>
-                    <p>Shutters are the ideal solution for awkward or unusual shaped windows/doors and offer light
-                        control, insulation, privacy and add an element of style to your home. They can be supplied with
-                        different slat size options, in different shapes, with different door configurations;
-                        all of this will be explored with you as part of your personalised site survey.</p>
+                    <h3>Full Height</h3>
+                    <p>A full height shutter covers the whole window from top to bottom. Full height shutters can be
+                        supplied with different louvres opening options, for example the bottom part of the shutters
+                        closed, whilst the top part of the shutter remains open. This has the added benefit of
+                        controlling privacy whilst allowing natural light into the room.</p>
                 </div>
                 <div class="sub-section-image">
-                    <img src="img/shutters.jpg"/>
+                    <img src="img/shutters/full-height/full-height.jpg"/>
                 </div>
             </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Cafe Style</h3>
+                    <p>Café shutters are custom made to cover part of the window which gives a continental look and
+                        feel. The Benefit of these shutters is allowing privacy at the bottom of the window whilst
+                        allowing full light to come into the room at the top of the window.</p>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/shutters/cafe-style/cafe-style.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Tier on Tier</h3>
+                    <p>Tier on tier shutters are custom made to have two sets of panels, one on top of the other that
+                        open and operate independently of each other.</p>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/shutters/tier-on-tier/tier-on-tier.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Solid</h3>
+                    <p>Shutters that are a solid wood panel and completely cover the window and block out the outside
+                        view</p>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/shutters/solid/solid.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Shaped</h3>
+                    <p>Bespoke panels that are custom made to fit shaped and awkward windows. This type of shutter is
+                        brilliant for making the most of original architecture in your property.</p>
+                    <div class="sub-section-image">
+                        <img src="img/shutters/shaped/shaped.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Tracked</h3>
+                    <p>Tracked shutters slide on a track in front of large windows or doors, giving easy access. They
+                        can be pulled right back to let the light stream in.</p>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/shutters/tracked/tracked.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of shutters-->
+    <div class="epic-header">
+        <h2>BLINDS</h2>
+    </div>
+
+    <div class="epic-section" id="blinds-section">
+        <div class="epic-main-image-container">
+            <img src="img/roman-blind-floral.jpeg"/>
+        </div>
+        <div class="sub-sections-container" id="blinds-sub-sections">
             <div class="sub-section">
                 <div class="sub-section-description">
                     <h3>Venetian</h3>
@@ -172,44 +247,33 @@
                         These blinds are available in free hang, roof blinds and perfect fit with top-down/bottom-up
                         opening
                         options.</p>
-                    <p>Pleated blinds can be supplied in a range of fabrics and colours (including black out) to suit
-                        your
-                        preference or room style.</p>
+                    <p>We can also supply pleated roof blinds that are motorised which are operated with a remote
+                        control.</p>
                 </div>
                 <div class="sub-section-image">
-                    <img src="img/venetians-in-spa.jpeg"/>
+                    <img src="img/pleated_blinds.jpg"/>
                 </div>
             </div>
             <div class="sub-section">
                 <div class="sub-section-description">
                     <h3>Perfect Fit</h3>
-                    <p>Pleated blinds have a number of advantages that make them a good choice for window coverings.
-                        These blinds come in a wide range of contemporary fabrics including specialist performance
-                        fabric options that can control heat and offer a wide range of benefits making them a good
-                        choice for south-facing
-                        conservatories.
-                        These blinds are available in free hang, roof blinds and perfect fit with top-down/bottom-up
-                        opening options.</p>
-                    <p>Pleated blinds can be supplied in a range of fabrics and colours (including black out) to suit
-                        your
-                        preference or room style.</p>
+                    <p>Perfect fit blinds are made to measure blinds and are ideal for UPVC windows, doors and
+                        conservatories. These blinds require no drilling as they clip into the window frame. Perfect fit
+                        blinds can be supplied in pleated fabrics, cellular fabrics or aluminium venetian slats each
+                        with their own properties.</p>
+
                 </div>
                 <div class="sub-section-image">
-                    <img src="img/venetians-in-spa.jpeg"/>
+                    <img src="img/blinds/perfect-fit.jpg"/>
                 </div>
             </div>
             <div class="sub-section">
                 <div class="sub-section-description">
                     <h3>Roman</h3>
                     <p>If you are looking for an alternative to curtains but still want an air of luxury, the Roman
-                        blind is an
-                        ideal solution. The Roman blind provides a clean/clinical finish and is chain operated providing
-                        a beautiful
-                        finish and feature to your window. Roman blinds can be measured to fit inside the window recess
-                        or on the
-                        outside (face fixed) to suit your preference. With various fabric options and designs and added
-                        black out
-                        options, these fabric blinds add the air of luxury you are looking for. </p>
+                        blind is an ideal solution. The roman blind provides a clean finish and can be chain or motor
+                        operated. With various fabric options and designs and added black out options, these fabric
+                        blinds add an air of luxury to any window.</p>
                     <div class="sub-section-image">
                         <img src="img/roman-blinds.jpeg"/>
                     </div>
@@ -243,7 +307,6 @@
                         designs to
                         match into your existing room décor, or something more neutral to add a classic look to your
                         window.</p>
-                    <p>Roller blinds can also be supplied in a motorised version with a remote control.</p>
                 </div>
                 <div class="sub-section-image">
                     <img src="img/roller-blind-with-black-bottom-bar.jpeg"/>
@@ -269,15 +332,9 @@
             <div class="sub-section">
                 <div class="sub-section-description">
                     <h3>Childrens</h3>
-                    <p>Window and roof blinds added to a conservatory allows more control over the light and privacy.
-                        Depending on your chosen option, you can choose a neutral design or one of the many coloured or
-                        patterned
-                        options to add character and a feature to your windows and ceiling. All conservatory blinds are
-                        individually
-                        measured for a perfect fitting solution. Window and roof blinds added to a conservatory allows
-                        more control
-                        over the light and privacy.
-                    </p>
+                    <p>Children’s blinds are in the main supplied in either a roller blind or a roman blind with the
+                        added benefit of black-out option. There are a wide range of styles and design to choose from to
+                        suit your preference.</p>
                 </div>
                 <div class="sub-section-image">
                     <img src="img/roman-blind-childrens-design.jpeg"/>
@@ -285,42 +342,96 @@
             </div>
         </div>
     </div>
-    <!--    <div class="epic-section">-->
-    <!--        <div class="epic-header">-->
-    <!--            <div class="half-col">-->
-    <!--                <h2>Shutters</h2>-->
-    <!--                <p>The shutters supplied by CR Blinds and Shutters come in stylish and versatile options and are-->
-    <!--                    available-->
-    <!--                    in a-->
-    <!--                    range of colours and can be made to fit any size of window or door. With an extensive range of-->
-    <!--                    colours-->
-    <!--                    and a-->
-    <!--                    huge choice of painted, stained and natural finishes you are sure to find something that suits your-->
-    <!--                    home.</p>-->
-    <!--                <p>If your preference is to have your shutters colour matched to a specific requirement, this is also-->
-    <!--                    available-->
-    <!--                    as a custom colour option.</p>-->
-    <!--                <p>Shutters are the ideal solution for awkward or unusual shaped windows/doors and offer light control,-->
-    <!--                    insulation,-->
-    <!--                    privacy and add an element of style to your home. They can be supplied with different slat size-->
-    <!--                    options,-->
-    <!--                    in-->
-    <!--                    different shapes, with different door configurations; all of this will be explored with you as part-->
-    <!--                    of-->
-    <!--                    your-->
-    <!--                    personalised site survey.</p>-->
-    <!--            </div>-->
-    <!--            <img src="img/daynight-conservatory.jpeg"/>-->
-    <!--            <div class="sub-sections-container">-->
-    <!--                <div class="sub-section"></div>-->
-    <!--                <div class="sub-section"></div>-->
-    <!--                <div class="sub-section"></div>-->
-    <!--                <div class="sub-section"></div>-->
-    <!--                <div class="sub-section"></div>-->
-    <!--                <div class="sub-section"></div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
+    <!--end of blinds-->
+
+    <div class="epic-header">
+        <h2>RECENT WORK</h2>
+    </div>
+
+    <div class="epic-section" id="gallery-section">
+        <div class="sub-sections-container" id="gallery-sub-sections">
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Full Height Shutters</h3>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/gallery/img1.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Shaped Shutters</h3>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/gallery/img2.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Full Height Shutters</h3>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/gallery/img3.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Skylight Blinds</h3>
+                    <div class="sub-section-image">
+                        <img src="img/gallery/img4.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Shaped Shutter</h3>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/gallery/img5.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Perfect Fit Venetian</h3>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/gallery/img6.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Full Height Shutters</h3>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/gallery/img7.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Full Height Shutters</h3>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/gallery/img8.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Full Height Shutters</h3>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/gallery/img9.jpg"/>
+                </div>
+            </div>
+            <div class="sub-section">
+                <div class="sub-section-description">
+                    <h3>Full Height Shutters</h3>
+                </div>
+                <div class="sub-section-image">
+                    <img src="img/gallery/img10.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="epic-section">
         <div class="epic-header">
             <h2>MAINTENANCE & REPAIRS</h2>
@@ -329,7 +440,7 @@
             <div id="repair-text-section">
                 <p>We provide a range of fit only options and provide a repair service for existing blinds (subject to
                     survey and age of existing blinds).</p>
-                <p>Please ask for further details about these additional services</p>
+                <p>Please ask for further details about our additional services</p>
             </div>
         </div>
     </div>
@@ -338,7 +449,12 @@
             <h2>CONTACT US</h2>
         </div>
         <div id="contact-section-container">
-            <img src="img/generic-background.jpg">
+            <div id="social-media-links-contact">
+                <img src="img/svg/icons/facebook-round-line.svg"/>
+                <img src="img/svg/icons/instagram-round-line.svg"/>
+                <img src="img/svg/icons/email-round-line.svg"/>
+            </div>
+            <span>EMAIL: info@crblindsandshutters.com | TEL: 07914690440</span>
         </div>
     </div>
     <footer>
@@ -355,16 +471,17 @@
                 <li>
                     <a href="#blinds-section">Blinds</a>
                 </li>
-                <li><a href="#shutters-section">Shutters</a></li>
+                <li><a href="#blinds-text-section">Shutters</a></li>
                 <li>
-                    <a href="#repairs-section">
+                    <a href="#repairs-section-container">
                         Maintenance & Repairs
                     </a>
                 </li>
                 <li>
-                    <a href="#contact-section">Contact Us</a>
+                    <a href="#contact-section-container">Contact Us</a>
                 </li>
             </ul>
+
             <ul>
                 <li>
                     Registered office:
@@ -374,20 +491,10 @@
                 <li>Bristol</li>
                 <li>BS34 7AE</li>
             </ul>
-
-            <!--            <span>Registered office: 4 Glebelands Road, Filton, Bristol, BS34 7AE – Tel: 07914 690440 Company registration number: 12976544</span>-->
         </div>
+        <span>Tel: 07914 690440 | Company registration number: 12976544</span>
     </footer>
 </div>
-
-<!--<div class="page" id="1">section 1</div>-->
-<!--<div class="page-container" id="2">section 2</div>-->
-<!--<div class="page-container" id="3">section 3</div>-->
-<!--<div class="page-container" id="4">section 4</div>-->
-<!--<div class="page-container" id="5">section 5</div>-->
-<!--<div class="page-container" id="6">section 6</div>-->
-<!--<footer></footer>-->
-
 
 </body>
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
